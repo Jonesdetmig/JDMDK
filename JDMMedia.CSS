@@ -21,7 +21,7 @@ body {
   position: fixed;
   height: 3rem;
   left: 5.7rem;
-  top:0.9rem;
+  top: 0.9rem;
   display: block;
 }
 
@@ -58,7 +58,7 @@ body {
   width: 90%;
   display: grid;
   /*grid-template-columns bestemmer antallet og størrelsen af columns*/
-  grid-template-columns:50% 48%;
+  grid-template-columns: 50% 48%;
   gap: 1rem;
 }
 

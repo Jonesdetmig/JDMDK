@@ -1,4 +1,4 @@
-let slideIndex = [1,1,1,1,1,1];//Keeps track of the current slide for each set of slides. Both sets start at the first slide.
+let slideIndex = [1, 1, 1, 1, 1, 1];//Keeps track of the current slide for each set of slides. Both sets start at the first slide.
 
 let slideId = ["slide", "slide2", "slide3", "slide4", "slide5", "slide6"];/*Define ID of all 'slide pairs' used for indexing*/
 
@@ -19,21 +19,19 @@ function plusSlides(n, no) {
 function showSlides(n, no) {
   //Get's the elements of the slide that should be changed around. Done by getting the correct slideId, depending on the index that was given
   let x = document.getElementsByClassName(slideId[no]);
-  
+
   //if the n is bigger than the amount of slides -> Go to the first slide
-  if (n > x.length) 
-  {
+  if (n > x.length) {
     slideIndex[no] = 1;
   }
   //if the n is less than the amount of slides -> Go to the last slide    
-  if (n < 1) 
-  {
+  if (n < 1) {
     slideIndex[no] = x.length;
   }
   //Hide all slides
   for (let i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
   //Show the one we selected
-  x[slideIndex[no]-1].style.display = "block";  
+  x[slideIndex[no] - 1].style.display = "block";
 }
