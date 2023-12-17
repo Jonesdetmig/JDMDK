@@ -1,0 +1,203 @@
+html {
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.navigation {
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 0.1rem;
+}
+
+.navbarContainer {
+  position: fixed;
+  height: 3rem;
+  left: 5.7rem;
+  top:0.9rem;
+  display: block;
+}
+
+.navbarElement {
+  position: relative;
+  top: 0rem;
+  margin: 0rem 3rem 0rem 0rem;
+
+
+}
+
+.navbar-header {
+  display: block;
+  position: fixed;
+  left: 1rem;
+  top: 0.20rem;
+  height: inherit;
+}
+
+.navbar {
+  position: fixed;
+  top: 0rem;
+  right: 0rem;
+  left: 0rem;
+  height: 3rem;
+  background-color: #9b0808;
+  display: block;
+  z-index: 1;
+}
+
+.gridabout {
+  position: relative;
+  margin: 5rem 0rem 0rem 1rem;
+  width: 90%;
+  display: grid;
+  /*grid-template-columns bestemmer antallet og størrelsen af columns*/
+  grid-template-columns:50% 48%;
+  gap: 1rem;
+}
+
+.parentRelativ {
+  top: 0rem;
+  right: 0rem;
+  left: 0rem;
+}
+
+.gridProduct {
+  display: grid;
+  row-gap: 2rem;
+  width: 100%;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  column-gap: 0;
+}
+
+* {
+  box-sizing: border-box
+}
+
+.slide,
+.slide2,
+.slide3,
+.slide4,
+.slide5,
+.slide6 {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshowMaster {
+  height: 18.7rem;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slideContainer {
+  max-width: 100%;
+  max-height: 25rem;
+}
+
+.slideshowContainer {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 1;
+  grid-row-end: 1;
+}
+
+.slideshowContainer2 {
+  grid-column-start: 1 !important;
+  grid-row-start: 2 !important;
+  grid-column-end: 1 !important;
+  grid-row-end: 2 !important;
+}
+
+.slideshowContainer3 {
+  grid-column-start: 1 !important;
+  grid-row-start: 3 !important;
+  grid-column-end: 1 !important;
+  grid-row-end: 3 !important;
+}
+
+.slideshowContainer4 {
+  grid-column-start: 1 !important;
+  grid-row-start: 4 !important;
+  grid-column-end: 1 !important;
+  grid-row-end: 4 !important;
+}
+
+.slideshowContainer5 {
+  grid-column-start: 1 !important;
+  grid-row-start: 5 !important;
+  grid-column-end: 1 !important;
+  grid-row-end: 5 !important;
+}
+
+.slideshowContainer6 {
+  grid-column-start: 1 !important;
+  grid-row-start: 6 !important;
+  grid-column-end: 1 !important;
+  grid-row-end: 6 !important;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 2rem;
+  margin-top: -3rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3rem 3rem 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3rem 0 0 3rem;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.siteBottom {
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+  height: 3rem;
+  left: 0;
+  background-color: #9b0808;
+  margin-top: 10rem;
+}
+
+.siteBottomContainer {
+  position: relative;
+  left: 3rem;
+  top: 25%;
+  max-width: 308px;
+}
+
+.bottomContainerElement {
+  position: relative;
+  margin: 0rem 3rem 0rem 0rem;
+}
